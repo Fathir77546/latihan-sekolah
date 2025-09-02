@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Siswa Baru</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("Naruto Bryon.gif") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      width: 400px;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.5); /* transparan */
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .form-container input[type="radio"] {
+      width: auto;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background:orangered;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background: orange;
+    }
+
+    button,
+        input[type="submit"],
+        input[type="reset"] {
+            margin-top: 15px;
+            padding: 10px;
+            width: 48%;
+            border: none;
+            border-radius: 5px;
+            background-color:white;
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color:white;
+        }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Formulir Pendaftaran Siswa Baru</h2>
+    <form>
+      <label>Nama Lengkap</label>
+      <input type="text" placeholder="Nama lengkap">
+
+      <label>NISN / NIS</label>
+      <input type="text" placeholder="Contoh: 0123456789">
+
+      <label>Jenis Kelamin</label><br>
+      <input type="radio" name="jk"> Laki-laki
+      <input type="radio" name="jk"> Perempuan <br><br>
+
+      <label>Tempat Lahir</label>
+      <input type="text" placeholder="Kota/Kabupaten">
+
+      <label>Tanggal Lahir</label>
+      <input type="date">
+
+      <label>Alamat</label>
+      <textarea placeholder="Tulis alamat lengkap"></textarea>
+
+      <label>Nomor Telepon</label>
+      <input type="tel" placeholder="08xxxxxxxxxx">
+
+      <label>Jurusan</label>
+      <select>
+        <option>Pilih Jurusan</option>
+        <option>IPAS</option>
+        <option>BAHASA INGGRIS</option>
+        <option>Bahasa INDONESIA</option>
+        <option>RPL</option>
+      </select>
+
+      <label>Upload Foto</label>
+      <input type="file">
+
+      <button type="submit">Kirim</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+</body>
+</html>
